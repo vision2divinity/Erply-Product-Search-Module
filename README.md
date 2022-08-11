@@ -1,5 +1,7 @@
 # Erply-Product-Search-Module
 
+#Automated Testing
+
 # syntax
 
 The syntax describes the various actions perform by an individaul about or for product search
