@@ -11,4 +11,4 @@ The syntax describes the various actions perform by an individaul about or for p
 3. One can search for product by entering the product code.
 4. One can search for product by entering the product name.
 
-Syntax can be found in the test>java folder.
+Syntax can be found in the src>test>java folder.
