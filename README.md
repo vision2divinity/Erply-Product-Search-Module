@@ -23,7 +23,7 @@ Ensure some Maven dependencies  from their sources below are inserted in the Mav
 
 
 # Getting Started 
-**1. Open IDE and create a Maven file with pom.xml file and add the below dependencies**
+**1. Open any of the IDE downloaded and create a Maven file (pom.xml) and add the below dependencies**
 <dependencies>
 
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
