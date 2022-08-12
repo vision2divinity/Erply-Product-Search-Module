@@ -4,7 +4,7 @@ The Erply Product Search enables users to search for products and checkout for a
 # Prerequisites 
 
 1. Java environment
-2. Maven
+2. Maven 
 3. MacOS / Windows 
 4. Eclipse/IntelliJ IDEA CE/VSCode
 5. Browsers (Chrome or Firefox)
@@ -12,9 +12,9 @@ The Erply Product Search enables users to search for products and checkout for a
 
 # Installation 
 
-Download and install  IDE's [Eclipse](https://www.eclipse.org/downloads/) or [Visual Studio Code](https://code.visualstudio.com/).
-
 Download and install Java on device from [here](https://www.java.com/en/download/) and configure your home environment path
+
+Download and install  IDE's [Eclipse](https://www.eclipse.org/downloads/) or [Visual Studio Code](https://code.visualstudio.com/).
 
 Ensure some Maven dependencies  from their sources below are inserted in the Maven    pom.xml file
 1. [Selenium Java Dependency](https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java)
@@ -62,7 +62,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class FirstSelenium {
+public class ErplyPOS {
 
 	public static void main(String[] args) {	
 
