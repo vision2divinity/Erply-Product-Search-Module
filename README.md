@@ -7,11 +7,13 @@ The Erply Product Search enables users to search for products and checkout for a
 2. Maven
 3. MacOS / Windows 
 4. Eclipse/IntelliJ IDEA CE/VSCode
+5. Browsers (Chrome or Firefox)
 
 
 # Installation 
 
-Download and install  IDE's [Eclipse](https://www.eclipse.org/downloads/) or [Visual Studio Code](https://code.visualstudio.com/) >
+Download and install  IDE's [Eclipse](https://www.eclipse.org/downloads/) or [Visual Studio Code](https://code.visualstudio.com/).
+
 Download and install Java on device from [here](https://www.java.com/en/download/) and configure your home environment path
 
 Ensure some Maven dependencies  from their sources below are inserted in the Maven    pom.xml file
@@ -21,7 +23,7 @@ Ensure some Maven dependencies  from their sources below are inserted in the Mav
 
 
 # Getting Started 
-** 1. Open IDE and create a Maven file with pom.xml file and add dependencies **
+**1. Open IDE and create a Maven file with pom.xml file and add dependencies**
 <dependencies>
 
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -40,7 +42,7 @@ Ensure some Maven dependencies  from their sources below are inserted in the Mav
 
 </dependencies>
 
-** 2. Create your class in the src>test>"name" and begin to develop your syntax **
+**2. Create your class in the src>test>"name" and begin to develop your syntax**
 
 import java.util.concurrent.TimeUnit;
 
