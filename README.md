@@ -100,21 +100,19 @@ driver.get("https://epos.erply.com/");
 	    driver.findElement(By.xpath("//input[@id = 'customer-search-input' and @placeholder = 'Products' and @type = 'text']")).clear();
 
 # Searching by product name
-driver.findElement(By.xpath("//input[@id = 'customer-search-input' and @placeholder = 'Products' and @type = 'text']")).sendKeys("Example product");	
+
+        driver.findElement(By.xpath("//input[@id = 'customer-search-input' and @placeholder = 'Products' and @type = 'text']")).sendKeys("Example product");	
         try {
 	        Thread.sleep(2000);
 	    } catch (InterruptedException e) {
 	        e.printStackTrace();
 	    }	
-
 		 driver.findElement(By.xpath("//div[@id='product-search-container']/div[2]/div/div/table/tbody/tr/td[3]")).click();
-
 		 try {
 		        Thread.sleep(2000);
 		    } catch (InterruptedException e) {
 		        e.printStackTrace();
 		    }
-
 		 driver.findElement(By.xpath("//html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/span[2]")).click();
 
 
