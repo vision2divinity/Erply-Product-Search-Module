@@ -15,19 +15,10 @@
 Download and install  IDE's https://www.eclipse.org/downloads/ or https://code.visualstudio.com/
 Download and install Java on device from here (https://www.java.com/en/download/) and configure your home environment path
 
-Before starting to work ensure you have some dependencies for those who will not be downloading the various browser drivers. 
+Ensure some Maven dependencies  from their sources below are inserted in the pom.xml file
 1. Selenium Java Dependency (https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java)
 2. WebDriver Manager to manage your browsers (https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager)
 
-# or 
-install the various browser drivers individually on your device 
-You will need to download additional components to work with each of the major browsers. The drivers for Chrome, Firefox, and Edge web browsers are all standalone executables that should be placed on your system PATH. Apple's safaridriver is shipped with Safari 10 for OS X El Capitan and macOS Sierra. You will need to enable Remote Automation in the Develop menu of Safari 10 before testing.
-
-Browser	            Component
-Chrome	            chromedriver(.exe) (https://chromedriver.chromium.org/downloads)
-        Edge	            MicrosoftWebDriver.msi (https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
-        Firefox             geckodriver(.exe) (https://github.com/mozilla/geckodriver/releases)
-        Safari	            safaridriver    (http://www.java2s.com/Code/JarDownload/selenium-safari/selenium-safari-driver-2.29.1.jar.zip)
 
 
 # Getting Started 
@@ -81,7 +72,7 @@ public class FirstSelenium {
 		//WebDriverManager.chromedriver().setup();
 
 		//ChromeDriver driver=new ChromeDriver();
-        
+
 		driver.get("https://epos.erply.com/");
         }
         }
@@ -91,3 +82,46 @@ driver.get("https://epos.erply.com/");
 		driver.findElement(By.name("clientCode")).sendKeys("104572");
 		driver.findElement(By.name("username")).sendKeys("testassignment");
 		driver.findElement(By.name("password")).sendKeys("PosTestAssignment123");
+
+# Searching by product code
+        driver.findElement(By.xpath("//input[@id = 'customer-search-input' and @placeholder = 'Products' and @type = 'text']")).sendKeys("001");
+		try {
+	        Thread.sleep(2000);
+	    } catch (InterruptedException e) {
+	        e.printStackTrace();
+	    }	
+	    driver.findElement(By.xpath("//div[@id='product-search-container']/div[2]/div/div/table/tbody/tr/td[3]")).click();   
+	    try {
+	        Thread.sleep(2000);
+	    } catch (InterruptedException e) {
+	        e.printStackTrace();
+	    }
+	    driver.findElement(By.xpath("//html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/span[2]")).click();
+
+	    driver.findElement(By.xpath("//input[@id = 'customer-search-input' and @placeholder = 'Products' and @type = 'text']")).clear();
+
+# Searching by product name
+driver.findElement(By.xpath("//input[@id = 'customer-search-input' and @placeholder = 'Products' and @type = 'text']")).sendKeys("Example product");	
+		try {
+	        Thread.sleep(2000);
+	    } catch (InterruptedException e) {
+	        e.printStackTrace();
+	    }	
+		 driver.findElement(By.xpath("//div[@id='product-search-container']/div[2]/div/div/table/tbody/tr/td[3]")).click();
+		 try {
+		        Thread.sleep(2000);
+		    } catch (InterruptedException e) {
+		        e.printStackTrace();
+		    }
+		 driver.findElement(By.xpath("//html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/span[2]")).click();
+
+		 driver.findElement(By.xpath("//input[@id = 'customer-search-input' and @placeholder = 'Products' and @type = 'text']")).clear();
+
+# Contributing
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
