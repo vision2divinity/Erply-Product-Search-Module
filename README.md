@@ -41,7 +41,7 @@ Ensure some Maven dependencies  from their sources below are inserted in the pom
 
 </dependencies>
 
-# 2. Begin to create and develop your syntax 
+# 2. Begin to create your class and develop your syntax 
 
 import java.util.concurrent.TimeUnit;
 
@@ -102,18 +102,23 @@ driver.get("https://epos.erply.com/");
 
 # Searching by product name
 driver.findElement(By.xpath("//input[@id = 'customer-search-input' and @placeholder = 'Products' and @type = 'text']")).sendKeys("Example product");	
+
 		try {
 	        Thread.sleep(2000);
 	    } catch (InterruptedException e) {
 	        e.printStackTrace();
 	    }	
+
 		 driver.findElement(By.xpath("//div[@id='product-search-container']/div[2]/div/div/table/tbody/tr/td[3]")).click();
+
 		 try {
 		        Thread.sleep(2000);
 		    } catch (InterruptedException e) {
 		        e.printStackTrace();
 		    }
+
 		 driver.findElement(By.xpath("//html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/span[2]")).click();
+
 
 		 driver.findElement(By.xpath("//input[@id = 'customer-search-input' and @placeholder = 'Products' and @type = 'text']")).clear();
 
