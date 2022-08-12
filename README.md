@@ -135,4 +135,5 @@ Distributed under the [MIT License](https://opensource.org/licenses/MIT)
 
 # Acknowledgments
 [Maven Repository](https://mvnrepository.com/artifact/io.github.bonigarcia)
+
 [Selenium Java](https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java)
