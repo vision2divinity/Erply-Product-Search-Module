@@ -1,28 +1,27 @@
-# Erply-Product-Search-Module
+# Erply Product Search Module
+The Erply Product Search enables users to search for products and checkout for a client in the Erply Point of Sale software with ease. 
 
 # Prerequisites 
-
-# Built With
 
 1. Java environment
 2. Maven
 3. MacOS / Windows 
-4. Eclipse/IntelliJ IDEA CE
+4. Eclipse/IntelliJ IDEA CE/VSCode
 
 
 # Installation 
 
-Download and install  IDE's https://www.eclipse.org/downloads/ or https://code.visualstudio.com/
-Download and install Java on device from here (https://www.java.com/en/download/) and configure your home environment path
+Download and install  IDE's [Eclipse](https://www.eclipse.org/downloads/) or [Visual Studio Code](https://code.visualstudio.com/) >
+Download and install Java on device from [here](https://www.java.com/en/download/) and configure your home environment path
 
-Ensure some Maven dependencies  from their sources below are inserted in the pom.xml file
-1. Selenium Java Dependency (https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java)
-2. WebDriver Manager to manage your browsers (https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager)
+Ensure some Maven dependencies  from their sources below are inserted in the Maven    pom.xml file
+1. [Selenium Java Dependency](https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java)
+2. [WebDriver Manager to manage your browsers](https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager)
 
 
 
 # Getting Started 
-# 1. Open IDE and create the pom.xml file and add dependencies 
+** 1. Open IDE and create a Maven file with pom.xml file and add dependencies **
 <dependencies>
 
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -41,7 +40,7 @@ Ensure some Maven dependencies  from their sources below are inserted in the pom
 
 </dependencies>
 
-# 2. Begin to create your class and develop your syntax 
+** 2. Create your class in the src>test>"name" and begin to develop your syntax **
 
 import java.util.concurrent.TimeUnit;
 
@@ -79,9 +78,9 @@ public class FirstSelenium {
 
 driver.get("https://epos.erply.com/");
 			
-		driver.findElement(By.name("clientCode")).sendKeys("104572");
-		driver.findElement(By.name("username")).sendKeys("testassignment");
-		driver.findElement(By.name("password")).sendKeys("PosTestAssignment123");
+		driver.findElement(By.name("clientCode")).sendKeys("104**");
+		driver.findElement(By.name("username")).sendKeys("te*******");
+		driver.findElement(By.name("password")).sendKeys("Poss******");
 
 # Searching by product code
         driver.findElement(By.xpath("//input[@id = 'customer-search-input' and @placeholder = 'Products' and @type = 'text']")).sendKeys("001");
@@ -126,7 +125,14 @@ driver.findElement(By.xpath("//input[@id = 'customer-search-input' and @placehol
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
-2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+2. Create your Feature Branch (git checkout -b "feature/AmazingFeature")
 3. Commit your Changes (git commit -m 'Add some AmazingFeature')
-4. Push to the Branch (git push origin feature/AmazingFeature)
+4. Push to the Branch (git push origin "feature/AmazingFeature")
 5. Open a Pull Request
+
+# License
+Distributed under the [MIT License](https://opensource.org/licenses/MIT)
+
+# Acknowledgments
+[Maven Repository](https://mvnrepository.com/artifact/io.github.bonigarcia)
+[Selenium Java](https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java)
