@@ -71,11 +71,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class FirstSelenium {
-	public static void main(String[] args) {		
+
+	public static void main(String[] args) {	
+
 		WebDriverManager.firefoxdriver().setup();
+
 		FirefoxDriver driver=new FirefoxDriver();
+
 		//WebDriverManager.chromedriver().setup();
+
 		//ChromeDriver driver=new ChromeDriver();
+        
 		driver.get("https://epos.erply.com/");
         }
         }
