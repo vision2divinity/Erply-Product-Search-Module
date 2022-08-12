@@ -101,8 +101,7 @@ driver.get("https://epos.erply.com/");
 
 # Searching by product name
 driver.findElement(By.xpath("//input[@id = 'customer-search-input' and @placeholder = 'Products' and @type = 'text']")).sendKeys("Example product");	
-
-		try {
+        try {
 	        Thread.sleep(2000);
 	    } catch (InterruptedException e) {
 	        e.printStackTrace();
